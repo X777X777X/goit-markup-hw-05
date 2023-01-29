@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,7 +23,7 @@
             <nav class="main-nav">
                 <a class="header-text" href="./index.html"><span class="header-web">Web</span>Studio</a>
                 <ul class="site-nav">
-                    <li class="link"><a class="header-list anker" href="./index.html">Studio</a></li>
+                    <li class="link"><a class="header-list  anker current" href="./index.html">Studio</a></li>
                     <li class="link"><a class="header-list anker" href="./portfolio.html">Portfolio</a></li>
                     <li class="link"><a class="header-list anker" href="#">Contacts</a></li>
                 </ul>
@@ -41,7 +41,7 @@
         <!-- HERO -->
         <section class="hero">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="button button-text" type="button">Order Service</button>
+            <button class="button button-text" type="button" data-modal-open>Order Service</button>
         </section>
         <!-- Section2 -->
         <section class="section-two">
@@ -326,6 +326,16 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="div modal">
+            <button type="button" data-modal-close class="modal-close-btn ">
+                <svg class="close-icon">
+                    <use href="./images/main-page/icon-close.svg#icon-close-black-18dp-2-1-2"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
